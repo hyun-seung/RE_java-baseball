@@ -1,11 +1,13 @@
 package baseball.view;
 
+import java.util.List;
+
 public class TotalView {
 
     OutputView output;
     InputView input;
 
-    TotalView() {
+    public TotalView() {
         output = new OutputView();
         input = new InputView();
     }
@@ -14,13 +16,13 @@ public class TotalView {
         output.printMain();
     }
 
-    public int getBaseballNumber() {
+    public List<Integer> getBaseballNumber() {
         output.printInput();
         return input.getBaseballNumber();
     }
 
-    public void printResult(int strikeCount, int ballCount) {
-        output.printResult(strikeCount, ballCount);
+    public void printResult(int ballCount, int strikeCount) {
+        output.printResult(ballCount, strikeCount);
     }
 
     public int getRestartOrEndNumber() {

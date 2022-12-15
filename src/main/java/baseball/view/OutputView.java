@@ -16,7 +16,7 @@ public class OutputView {
     }
 
     public void printInput() {
-        System.out.println(INPUT_NUMBER);
+        System.out.print(INPUT_NUMBER);
     }
 
     public void printResult(int ballCount, int strikeCount) {
@@ -30,7 +30,8 @@ public class OutputView {
 
     private void printBall(int ballCount) {
         if (ballCount > 0) {
-            System.out.println(ballCount + BALL + " ");
+            System.out.print
+                    (ballCount + BALL + " ");
         }
     }
 
